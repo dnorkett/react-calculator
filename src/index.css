@@ -1,13 +1,145 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(19, 34, 82);
+  display:flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#calculator {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  color: rgb(19, 34, 82);   
+  width: 320px;  
 }
+
+#displayApp {
+  padding: 5px;
+  font-size: 20px;  
+  text-align: right;
+}
+
+#display {
+  height: 35px;
+}
+
+#formula {
+  height: 35px;
+}
+
+button {
+  border:none;
+}
+
+.number {
+  color: white;
+  background-color: rgb(78, 78, 78);
+}
+
+.operand {
+  color: white;
+  background-color: grey;
+}
+
+#calculatorButtons {  
+  height: 350px;
+  display: grid;  
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#clear {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  color: white;
+  background-color:rgb(189, 67, 67);
+}
+
+#divide {
+  grid-column: 3 ;
+  grid-row: 1 / 2;
+} 
+
+#multiply {
+  grid-column: 4 ;
+  grid-row: 1 / 2;
+} 
+
+#add {
+  grid-column: 4 ;
+  grid-row: 3 / 3;
+} 
+
+#subtract {
+  grid-column: 4 ;
+  grid-row: 2 / 2;
+}
+
+#equals {
+  grid-column: 4;
+  grid-row: 4 / 6;
+  color: white;
+  background-color: rgb(66, 66, 219);
+}
+
+#decimal {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#one {
+  grid-column: 1 ;
+  grid-row: 4;
+} 
+
+#two {
+  grid-column: 2 ;
+  grid-row: 4;
+} 
+
+#three {
+  grid-column: 3 ;
+  grid-row: 4;
+} 
+
+#four {
+  grid-column: 1 ;
+  grid-row: 3;
+} 
+
+#five {
+  grid-column: 2 ;
+  grid-row: 3;
+} 
+
+#six {
+  grid-column: 3 ;
+  grid-row: 3;
+} 
+
+#seven {
+  grid-column: 1 ;
+  grid-row: 2;
+} 
+
+#eight {
+  grid-column: 2 ;
+  grid-row: 2;
+} 
+
+#nine {
+  grid-column: 3 ;
+  grid-row: 2;
+}
+
+#zero {
+  grid-column: 1 / 3;
+  grid-row: 5
+}
+
+
